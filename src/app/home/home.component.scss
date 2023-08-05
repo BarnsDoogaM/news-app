@@ -1,0 +1,285 @@
+.home {
+    padding: 2rem;
+    min-height: 90vh;
+    background-color: whitesmoke;
+    display: flex;
+    gap: 2rem;
+    // border: 1px solid red;
+
+    @media only screen and (min-width: 20em) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width: 75em) {
+        display: flex;
+        flex-direction: unset;
+
+    }
+
+    &__text {
+        width: 50%;
+        height: auto;
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: 50%;
+
+        }
+    }
+
+    &__h1 {
+        font-size: 3rem;
+        padding-left: 2rem;
+
+        @media only screen and (min-width: 20em) {
+            padding-left: 0;
+
+
+        }
+
+        @media only screen and (min-width: 75em) {
+            padding-left: 2rem;
+
+
+        }
+    }
+
+    &__h2 {
+        padding-left: 2rem;
+        font-size: 5rem;
+
+        @media only screen and (min-width: 20em) {
+            padding-left: 0;
+            text-align: center;
+
+        }
+
+        @media only screen and (min-width: 20em) {
+            padding-left: 2rem;
+            text-align: unset;
+
+        }
+    }
+
+    &__para {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: unset;
+            margin-left: 2rem;
+        }
+    }
+
+    &__link {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    &__more {
+        font-size: 1.6rem;
+        background-color: rgb(115, 119, 115);
+        text-decoration: none;
+        border-radius: 16px;
+        padding: 1rem;
+        color: white;
+        transition: .5s ease-in-out;
+
+        &:hover {
+            background-color: rgb(147, 40, 189);
+            color: black;
+            transform: scale(45);
+        }
+
+    }
+
+    &__pictures {
+        width: 50%;
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: 50%;
+        }
+    }
+
+    &__barns {
+        font-size: 10rem;
+        text-transform: capitalize;
+        color: #000;
+        text-align: center;
+        margin: 7rem auto;
+        width: 85%;
+        border-left: 2px solid green;
+        // width: 50%;
+
+        @media only screen and (min-width: 20em) {
+            font-size: 5rem;
+            width: 100%;
+            border: .3px solid red;
+        }
+
+        @media only screen and (min-width: 75em) {
+            font-size: 10rem;
+            width: 85%;
+
+        }
+
+    }
+
+    &__second {
+        display: flex;
+        margin-top: 3rem;
+
+        @media only screen and (min-width: 20em) {
+            flex-direction: column;
+            //    border: px solid red;
+
+        }
+
+        @media only screen and (min-width: 75em) {
+            flex-direction: unset;
+            //    border: px solid red;
+
+        }
+    }
+
+    &__anchor {
+        width: 50%;
+        display: inline;
+        gap: 1rem;
+        padding-top: 7rem;
+        transform: rotate(270deg);
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+            transform: rotate(0deg);
+
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: 50%;
+            transform: rotate(270deg);
+
+        }
+    }
+
+    &__discover {
+        font-size: 1.5rem;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 16px;
+        padding: 1rem;
+        border: 1px solid blue;
+        transition: all .2s;
+        margin-top: 4rem;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background-color: rgb(147, 40, 189);
+            color: black;
+            transform: scale(45);
+        }
+    }
+
+    &__fruit {
+        width: 50%;
+        animation: moveInRight 4s infinite;
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+
+
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: 50%;
+            animation: moveInRight 2s infinite;
+
+        }
+    }
+
+
+    @keyframes moveInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(1rem);
+        }
+
+        80% {
+            transform: (-1rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(3rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        @media only screen and (min-width: 20em) {
+            padding: 1rem;
+            animation: moveInBottom 2s ease;
+        }
+
+    }
+
+
+    &__reverse {
+        padding: 1rem;
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    &__joy-giver {
+        width: 50%;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+            padding: 2rem;
+
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: 50%;
+            padding: unset;
+
+        }
+
+    }
+
+    &__joy {
+        background-color: grey;
+        border-radius: 16px;
+        padding: 3rem;
+    }
+
+
+}
