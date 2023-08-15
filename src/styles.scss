@@ -8,10 +8,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color: rgb(211, 178, 178);
+    --fontsize: 1.6rem
+}
+
 html{
     font-size: 62.5%; 
 }
 
 // body{
-//     select
+    
 // }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

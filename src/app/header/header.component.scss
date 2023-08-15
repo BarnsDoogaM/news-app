@@ -1,9 +1,11 @@
 .heading {
-  background-color: rgb(202, 73, 73);
-  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  font-size: var(--fontsize);
   min-height: 10vh;
+  position: fixed;
   z-index: 2000;
-  // margin-bottom: 5rem;
+  width: 100%;
+  top: 0;
 
   &__sheries {
     text-decoration: none;
@@ -31,23 +33,12 @@
     list-style-type: none;
     display: inline-block;
 
-    @media only screen and (min-width: 20em) {
-      display: none;
-
-    }
-
-    @media only screen and (min-width: 75em) {
-      display: inline-block;
-
-    }
-
-
 
   }
 
   &__nav-list-link {
     text-decoration: none;
-    color: white;
+    color: black;
   }
 
 

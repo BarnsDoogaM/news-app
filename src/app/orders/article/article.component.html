@@ -1,0 +1,36 @@
+<div class="two">
+    <div class="two__second" *ngFor="let article of articles">
+        <div>
+            <div class="two__fourth">
+                <img class="two__img" [src]="article.urlToImage" alt="">
+            </div>
+            <div class="two__third">
+                
+                <div>
+                    <h1>{{article.title}}</h1>
+                    <h4>{{article.name}}</h4>
+                    <h5>{{article.author}}</h5>
+                    <p>{{article.description}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div>
+            <div class="two__fourth">
+                <img class="two__img" src="../../../assets/apple-2.jpg" alt="">
+            </div>
+            <div class="two__third">
+                <div>
+                    <h3>teheh</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, labore.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- <div class="two__first" *ngFor="let new of sources">
+        {{new.name}}
+    </div> -->
+    <!-- <div><img class="two__img" [src]="headline.urlToImage" alt=""></div>
+    <h6>{{headline.title}}</h6> -->
+</div>

@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { PricingRoutingModule } from './pricing/pricing-routing.module';
-import { CounsellingRoutingModule } from './counselling/counselling-routing.module';
-import { BakingRoutingModule } from './baking/baking-routing.module';
 import { ErrorComponent } from './error/error.component';
+import { HeaderDirective } from './header.directive';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 
@@ -18,12 +18,14 @@ import { ErrorComponent } from './error/error.component';
     HeaderComponent,
     HomeComponent,
     ErrorComponent,
+    HeaderDirective,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
