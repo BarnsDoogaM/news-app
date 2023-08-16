@@ -1,0 +1,26 @@
+<div class="two">
+    <h1>News Sources</h1>
+    <div class="two__input">
+        <form>
+            <input type="text" placeholder="search..">
+        </form>
+    </div>
+    <div class="two__second">
+        <div class="two__person" *ngFor="let new of sources">
+            
+            <div class="two__third">
+                <div class="two__all">
+                    <div class="two__wonder">
+                        <h3>Country: {{new.country}}</h3>
+                        <p>Name: {{new.name}}</p>
+                    </div>
+                    <h5>Category: {{new.category}}</h5>
+                    <p>Description: <br> {{new.description}}</p>
+        
+                </div>
+                <a href="{{new.url}}">read more...</a>
+            </div>
+        </div>   
+        
+    </div>
+</div>

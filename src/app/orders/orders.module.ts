@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { OrdersRoutingModule } from './orders-routing.module';
 import { OrdersComponent } from './orders.component';
-import { TopHeadLinesComponent } from './top-head-lines/top-head-lines.component';
 import { ArticleComponent } from './article/article.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SourcesComponent } from './sources/sources.component';
 // import {MatToolbarModule} from '@angular/material/toolbar';
 // import {MatIconModule} from '@angular/material/icon';
 
@@ -12,12 +13,14 @@ import { ArticleComponent } from './article/article.component';
 @NgModule({
   declarations: [
     OrdersComponent,
-    TopHeadLinesComponent,
-    ArticleComponent
+    ArticleComponent,
+    SourcesComponent
   ],
   imports: [
     CommonModule,
     OrdersRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
     // MatToolbarModule,
     // MatIconModule
     

@@ -9,4 +9,28 @@ p{
     justify-content: center;
     text-transform: capitalize;
     color: white;
+
+    
+    @media screen and  (min-width: 20em) {
+        width: 90%;
+        text-align: start;
+        margin: 7rem 2rem 0 2rem;
+        align-items: unset;
+        background-color: white;
+        color: black;
+        box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .4);
+    }
+    
+    @media screen and  (min-width: 68em) {
+        width: 50%;
+        height: 50vh;
+        font-size: 1.6rem;
+        margin: 7rem auto;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+        color: white;
+    }
 }

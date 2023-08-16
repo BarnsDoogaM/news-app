@@ -9,7 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import { HeaderDirective } from './header.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,23 +2,34 @@
 
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --bg-color: rgb(211, 178, 178);
     --fontsize: 1.6rem
 }
 
-html{
-    font-size: 62.5%; 
+html {
+    font-size: 62.5%;
 }
 
 // body{
-    
+
 // }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.isInvalid{
+border: 1px solid red;
+}

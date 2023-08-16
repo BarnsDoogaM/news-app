@@ -279,7 +279,7 @@
 
         @media only screen and (min-width: 68em) {
             width: 100%;
-            padding: unset;
+            padding: 0rem;
 
         }
 
@@ -289,7 +289,22 @@
         background-color: grey;
         border-radius: 16px;
         padding: 3rem;
+
+        @media only screen and (min-width: 20em) {
+            width: 100%;
+            padding: 2rem;
+
+        }
+
+        @media only screen and (min-width: 68em) {
+            width: 100%;
+            font-size: 1.4rem;
+            padding: 1rem;
+            line-height: 1;
+
+        }
     }
+
 
 
 }

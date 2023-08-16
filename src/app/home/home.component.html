@@ -8,14 +8,15 @@
                 we are located off inikpi street highlevel makurdi benue
                 state. our email address is barnsdooga@gmail.com</p>
             <div class="home__link">
-                <a routerLink="/orders" class="home__more">View Retrieved Api</a>
+                <a routerLink="/orders/article" style="margin-right: 1rem;" class="home__more">View Retrieved Api</a>
+                <a routerLink="/orders/sources" style="background-color: blueviolet;" class="home__more">News Sources</a>
             </div>
 
 
             <div class="home__second">
                 <div class="home__anchor">
                     <div class="home__reverse">
-                        <a href="#" class="home__discover">Discover Now</a>
+                        <a [routerLink]="['/orders/article']" class="home__discover">Discover Now</a>
                     </div>
                     <div class="home__joy-giver">
                         <h1 class="home__joy">Top headlings aljazera etc...</h1>

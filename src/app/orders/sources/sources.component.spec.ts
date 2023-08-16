@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TopHeadLinesComponent } from './top-head-lines.component';
+import { SourcesComponent } from './sources.component';
 
-describe('TopHeadLinesComponent', () => {
-  let component: TopHeadLinesComponent;
-  let fixture: ComponentFixture<TopHeadLinesComponent>;
+describe('SourcesComponent', () => {
+  let component: SourcesComponent;
+  let fixture: ComponentFixture<SourcesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TopHeadLinesComponent ]
+      declarations: [ SourcesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TopHeadLinesComponent);
+    fixture = TestBed.createComponent(SourcesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
