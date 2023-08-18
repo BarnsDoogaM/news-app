@@ -4,38 +4,36 @@
     line-height: 1;
     margin: 10rem auto;
 
-    & h1{
+    & h1 {
         margin-left: 2rem;
     }
 
-    @media screen and  (min-width: 20em) {
+    @media screen and (min-width: 20em) {
         width: 100%;
         margin: 7rem auto;
     }
-    
-    @media screen and  (min-width: 68em) {
+
+    @media screen and (min-width: 68em) {
         width: 80%;
         margin: 10rem auto;
     }
-    
 
-
-    &__input{
+    &__input {
         width: 70%;
         border: 1px sold red;
         margin: 0 auto;
 
-        @media screen and  (min-width: 20em) {
+        @media screen and (min-width: 20em) {
             width: 80%;
             margin-left: 3rem;
         }
-        
-        @media screen and  (min-width: 68em) {
+
+        @media screen and (min-width: 68em) {
             width: 70%;
             margin: 0 auto;
         }
-        
-        & input{
+
+        & input {
             width: 100%;
             outline: none;
             box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .4);
@@ -61,14 +59,14 @@
         padding: 1rem;
         line-height: 1.6;
 
-        @media screen and  (min-width: 20em) {
+        @media screen and (min-width: 20em) {
             width: 100%;
         }
-        
-        @media screen and  (min-width: 68em) {
+
+        @media screen and (min-width: 68em) {
             width: 30%;
         }
-        
+
 
         & a {
             margin-top: auto;
@@ -96,19 +94,20 @@
         width: 100%;
         height: 20%;
         transition: all .2s;
-        &:hover{
+
+        &:hover {
             transform: scale(1.05);
 
-            @media screen and  (min-width: 20em) {
+            @media screen and (min-width: 20em) {
                 transform: none;
             }
-            
-            @media screen and  (min-width: 68em) {
+
+            @media screen and (min-width: 68em) {
                 transform: scale(1.05);
             }
         }
 
-       
+
     }
 
     &__third {

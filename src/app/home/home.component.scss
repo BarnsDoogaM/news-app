@@ -88,6 +88,16 @@
     &__link {
         margin-top: 2rem;
         margin-left: 2rem;
+
+        @media only screen and (min-width: 20em) {
+            margin-top: 2rem;
+            margin-left: 0rem;
+        }
+
+        @media only screen and (min-width: 68em) {
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
     }
 
     &__more {

@@ -12,12 +12,13 @@ export class TopRatedNewsService {
   constructor(private http: HttpClient) { }
 
 
-  getNews(): Observable<any> {
-    return this.http.get('https://newsapi.org/v2/sources?country=us&apiKey=' + this.API_KEY)
+  getNews(): Observable<TopRatedNews[]> {
+    return this.http.get<TopRatedNews[]>('https://newsapi.org/v2/sources?country=us&apiKey=' + this.API_KEY)
   }
-  getTopHeadLines(): Observable<any> {
-    return this.http.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=' + this.API_KEY)
-    
+  
+
+  getTopHeadLines(): Observable<TopRatedNews[]> {
+    return this.http.get<TopRatedNews[]>('https://newsapi.org/v2/top-headlines?country=us&apiKey=' + this.API_KEY)
   }
   getArtclesById(source: string): Observable<any> {
     return this.http.get('https://newsapi.org/v2/top-headlines/sources?apiKey=' + source + this.API_KEY)

@@ -8,7 +8,7 @@ import { TopRatedNewsService } from '../top-rated-news.service';
 })
 export class SourcesComponent implements OnInit {
   public sources: any = [];
-  public articles: any = [];
+  // public articles: any = [];
 
 
  
@@ -19,10 +19,10 @@ export class SourcesComponent implements OnInit {
       console.log(res);
       this.sources = res.sources
     })
-    this.TopRatedNews.getTopHeadLines().subscribe((res: any) => {
-      console.log(res);
-      this.articles = res.articles
-    });
+    // this.TopRatedNews.getTopHeadLines().subscribe((res: any) => {
+    //   console.log(res);
+    //   this.articles = res.articles
+    // });
 
 
 

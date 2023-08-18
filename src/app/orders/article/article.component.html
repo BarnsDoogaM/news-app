@@ -1,7 +1,7 @@
 <div class="two">
     <div class="two__input">
-        <form [formGroup]="articleForm" [ngClass]="{'isInvalid': searchText}" FormControlName="search">
-            <input type="text" placeholder="search..">
+        <form [formGroup]="articleForm">
+            <input type="text" placeholder="Search..." [ngClass]="{'isInvalid': searchText}" FormControlName="search">
         </form>
         <span>{{searchText}}</span>
     </div>
@@ -15,7 +15,7 @@
                 <div class="two__all">
                     <div class="two__wonder">
                         <h3 style="color: rgb(13, 11, 112); font-weight: 700;">Author: {{new.author}}</h3>
-                        <p>date: {{new.publishedAt}}</p>
+                        <p>date: {{new.publishedAt | date: 'medium'}}</p>
                     </div>
                     <h5>Title: {{new.title}}</h5>
                     <p>Description: <br> {{new.description}}</p>
@@ -24,5 +24,7 @@
                 color: white; text-decoration: none;">read more...</a>
             </div>
         </div>
+
+        <!-- {{selectedNewsChannel}} -->
     </div>
 </div>
